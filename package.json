@@ -1,0 +1,17 @@
+{
+  "name": "@workspace/whatsapp-bot",
+  "version": "2.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node runner.js",
+    "dev": "node runner.js",
+    "check": "find . -name '*.js' -type f ! -name '*.part' -print0 | xargs -0 -n1 node --check"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.7.22",
+    "dotenv": "^18.0.9",
+    "pino": "^9.0.0",
+    "sharp": "^0.34.0"
+  }
+}
